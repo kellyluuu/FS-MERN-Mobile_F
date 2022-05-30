@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom'
 export default function New (props){
     const [newForm, setNewForm] = useState({
         name: "",
@@ -23,6 +24,7 @@ export default function New (props){
             catagory: "",
             price: "",
         })
+        useNavigate("/")
     }
 
   return (
