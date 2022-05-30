@@ -18,11 +18,11 @@ function Show (props){
         }))
     }
 
-    const handleSubmit = (event) =>{
-        event.preventDefault()
-        props.updateMenu(editForm, item._id)
-        navigate("/")
-    }
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        props.updateMenu(editForm, item._id);
+        navigate("/");
+      };
     
     const removeItem = () =>{
         props.deleteMenu(item._id);
@@ -43,20 +43,23 @@ function Show (props){
                     name="name"
                     placeholder="name"
                     onChange={handleChange}
+                    required
                 />
                 <input
                     type="text"
                     value={editForm.image}
                     name="image"
-                    placeholder={item.image}
+                    placeholder="Image URL"
                     onChange={handleChange}
+                    required
                 />
                 <input  
                     type="text"
                     value={editForm.catagory}
                     name="catagory"
-                    placeholder={item.catagory}
+                    placeholder="catagory"
                     onChange={handleChange}
+                    required
                 />
                 <input 
                     type="number"
@@ -64,10 +67,11 @@ function Show (props){
                     min ="0"
                     value={editForm.price}
                     name="price"
-                    placeholder={item.price}
+                    placeholder="price"
                     onChange={handleChange}
+                    required
                 />
-                <input type="submit" value ="Update Item"/>
+                <input className="updateBtn" type="submit" value ="Update Item"/>
             </form>
         </div>
     )

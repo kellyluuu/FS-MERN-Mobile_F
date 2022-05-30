@@ -54,6 +54,14 @@ body {
       padding-top: 20px;
       padding-bottom: 20px;
       background-color: white;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      h3{
+        color: $main10-color;
+      }
+      a{
+        text-decoration: none;
+      }
+      
   }
   
   .itemBox:hover {
@@ -104,8 +112,8 @@ body {
     background-color: $main2-color;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
   }
+
   
   /* Links inside the dropdown */
   .dropdown-content a {
@@ -130,8 +138,48 @@ body {
   .img {
     width: 120px;
      border-radius: 20px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
 
+  .new {
+    font-size: small;
+    input{
+      margin: 15px;
+      padding: 10px;
+      margin-top: 10px;
+      width: 250px;
+    }
+  }
+.updateBtn{
+  background-color: $main6-color;
+  border: $main10-color;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+
+#delete{
+  background-color: $main4-color;
+  color: red;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+  .search{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: $main8-color;
+    color: $main2-color;
+    border-radius: 10px;
+    font-size: larger;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 0px;
+
+  }
+
+  .search:hover {
+    margin-left: 2px;
+  background-color: $main6-color;
+}
 
   .updateItem{
     background-color: $main2-color;
@@ -140,10 +188,11 @@ body {
     }
 
       input{
-        width: 250px;
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
+        margin: 10px;
+        padding: 10px;
+        width: 300px;
     }
   }
+
+
 

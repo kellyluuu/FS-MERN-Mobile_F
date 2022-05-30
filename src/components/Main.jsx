@@ -6,7 +6,7 @@ import New from "../pages/New"
 
 function Main (props) {
     const [menu, setMenu] = useState(null)
-    const URL = "https://fs-mern-mobile.herokuapp.com/menu"
+    const URL = "https://fs-mern-mobile.herokuapp.com/menu/"
 
     //INDEX ROUTE 
     const getMenu = async ()=>{
@@ -29,13 +29,13 @@ const createMenu = async (menu) =>{
 
 //UPDATE ROUTE 
 
-const updateMenu = async (item, id) =>{
-    await fetch (URL + id,{
+const updateMenu = async (menu, id) =>{
+    await fetch (URL + id, {
         method: "PUT",
         headers: {
-            "Content-Text": "Application/json",
+            "Content-Type": "Application/json",
         },
-        body: JSON.stringify(item),
+        body: JSON.stringify(menu)
     })
     getMenu()
 }
@@ -52,10 +52,14 @@ useEffect(()=> {getMenu()},[])
     return (
         <main>
             <Routes>
-                <Route exact path="/" 
+                <Route  path="/" 
                 element={<Index menu={menu}/>}/>
                 <Route path="/menu/:id" 
-                element={<Show menu={menu} updateMenu={updateMenu} deleteMenu={deleteMenu}/>}/>
+                element={<Show 
+                menu={menu} 
+                updateMenu={updateMenu} 
+                deleteMenu={deleteMenu}/>}
+                />
                 <Route path="/new"
                 element={<New createMenu={createMenu}/>}/>
             </Routes>

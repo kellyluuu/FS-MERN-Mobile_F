@@ -27,35 +27,40 @@ export default function New (props){
 
   return (
     <section>
-    <form onSubmit={handleSubmit}>
-      <input
+      <h2> Create New Item</h2>
+    <form className="new" onSubmit={handleSubmit}>
+      Item Name<input
         type="text"
         value={newForm.name}
         name="name"
         placeholder="name"
         onChange={handleChange}
-      />
-      <input
+        required
+      /> <br></br>
+      Image URL<input
         type="text"
         value={newForm.image}
         name="image"
         placeholder="image URL"
         onChange={handleChange}
-      />
-      <input
+        required
+      /> <br></br>
+      Catagory<input
         type="text"
         value={newForm.catagory}
         name="catagory"
         placeholder="catagory"
         onChange={handleChange}
-      />
-        <input
+        required
+      /> <br></br>
+      Price<input
         type="number"
         value={newForm.price}
         name="price"
         placeholder="price"
         onChange={handleChange}
-      />
+        required
+      /> <br></br>
       <input type="submit" value="Create" />
     </form>
 
