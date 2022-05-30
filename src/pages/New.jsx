@@ -1,6 +1,9 @@
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom'
+
+
 export default function New (props){
+  let navigate = useNavigate()
     const [newForm, setNewForm] = useState({
         name: "",
         image: "",
@@ -24,7 +27,7 @@ export default function New (props){
             catagory: "",
             price: "",
         })
-        useNavigate("/")
+        navigate("/")
     }
 
   return (
