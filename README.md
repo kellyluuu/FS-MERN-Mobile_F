@@ -6,7 +6,8 @@
 | Project Name | Full Stack MERN Mobile APP |
 | Description | Food POS system. |
 | Live Website | https://dazzling-rabanadas-faa54f.netlify.app/ |
-| Repo | https://github.com/kellyluuu/FS-MERN-Mobile_F |
+| Repo frontend | https://github.com/kellyluuu/FS-MERN-Mobile_F |
+| Repo backend | https://github.com/kellyluuu/FS-MERN-Mobile_B |
 
 ## Route Tables
 
@@ -17,7 +18,7 @@
 | /menu/:id | GET | JSON of item with matching id number | |
 | /menu/:id | PUT | update item with matching idea, return its JSON | body must include updated data |
 | /menu/:id | DELETE | delete the item with the matching id | |
-| /auth/signup | POST | PENDING | new user info must be included in body |
+| /auth/register | POST | PENDING | new user info must be included in body |
 | /auth/login | POST | PENDING | username and password must be included in body |
 
 ## Component Architecture
