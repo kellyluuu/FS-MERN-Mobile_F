@@ -10,7 +10,7 @@ export default function Nav(props) {
                 <div className="dropdown-content">
                     <Link to ="/"> Home </Link>
                     <Link to ="/new"> Create New Item </Link>
-                    <Link to ="/"> Login </Link>
+                    <Link to ="/login"> Login </Link>
 
                  </div>
          </div>

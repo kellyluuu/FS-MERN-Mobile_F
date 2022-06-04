@@ -3,6 +3,11 @@ import {Routes, Route} from "react-router-dom"
 import Index from "../pages/Index"
 import Show from "../pages/Show"
 import New from "../pages/New"
+import Login from '../pages/Login'
+
+
+
+
 
 function Main (props) {
     const [menu, setMenu] = useState(null)
@@ -49,6 +54,8 @@ const deleteMenu = async (id)=>{
 }
 
 useEffect(()=> {getMenu()},[])
+
+
     return (
         <main>
             <Routes>
@@ -62,6 +69,7 @@ useEffect(()=> {getMenu()},[])
                 />
                 <Route path="/new"
                 element={<New createMenu={createMenu}/>}/>
+                <Route path ="/login" element={<Login />}/>
             </Routes>
         </main>
     )
