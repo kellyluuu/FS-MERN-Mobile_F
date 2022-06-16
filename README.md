@@ -5,7 +5,7 @@
 |-------|--------|
 | Project Name | Full Stack MERN Mobile APP |
 | Description | Food POS system. |
-| Live Website | https://dazzling-rabanadas-faa54f.netlify.app/ |
+| Live Website | https://resplendent-cucurucho-d85a88.netlify.app/ |
 | Repo frontend | https://github.com/kellyluuu/FS-MERN-Mobile_F |
 | Repo backend | https://github.com/kellyluuu/FS-MERN-Mobile_B |
 
